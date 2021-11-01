@@ -23,7 +23,22 @@ func TestSubstracao(t *testing.T) {
 	sub := Substracao(a, b)
 	//Then
 	if sub != 12 {
-		t.Errorf("Resultado da substracao eh invalido: Resultado: %d. Esperando: %d", sub, 12)
+		t.Errorf("Resultado da substracao eh invalido: Resultado: %d. Esperado: %d", sub, 12)
+	}
+
+}
+
+func TestMultiplicacao(t *testing.T) {
+	//Given
+	a := 3
+	b := 2
+
+	//When
+	prod := Multiplicacao(a, b)
+
+	//Then
+	if prod != 6 {
+		t.Errorf("Resultado da multiplicacao eh invalido: Resultado: %d. Esperado: %d", prod, 6)
 	}
 
 }
